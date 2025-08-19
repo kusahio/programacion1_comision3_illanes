@@ -39,16 +39,24 @@ horas = pedir_segundos / segundos_por_hora
 print(f"{segundos_por_hora} segundos son equivalentes a {horas:.2f} horas aproximadamente")
 """
 
-"""
+
 # 6 - tabla multiplicar
 factor = int(input("ingresa un número:"))
 contador = 0
+print(f"{factor} * 0 = {factor * 0}")
+print(f"{factor} * 1 = {factor * 1}")
+print(f"{factor} * 2 = {factor * 2}")
+print(f"{factor} * 3 = {factor * 3}")
+print(f"{factor} * 4 = {factor * 4}")
+print(f"{factor} * 5 = {factor * 5}")
+print(f"{factor} * 6 = {factor * 6}")
+print(f"{factor} * 7 = {factor * 7}")
+print(f"{factor} * 8 = {factor * 8}")
+print(f"{factor} * 9 = {factor * 9}")
+print(f"{factor} * 10 = {factor * 10}")
+print(f"{factor} * 11 = {factor * 11}")
+print(f"{factor} * 12 = {factor * 12}")
 
-while contador <= 12:
-	multiplicar = factor * contador
-	print(f"{factor} * {contador} = {multiplicar}")
-	contador = contador + 1
-"""
 
 """
 # 7 - Operadores
@@ -87,6 +95,3 @@ numero_tres = float(input("Ingresa el primer número:"))
 promedio = (numero_uno + numero_dos + numero_tres) / 3
 print(f"el promedio de los números ingresados es {promedio:.2f}")
 """
-
-
-print(len(456))
