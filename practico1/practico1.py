@@ -42,7 +42,6 @@ print(f'{segundos_por_hora} segundos son equivalentes a {horas:.2f} horas aproxi
 
 """ # 6 - tabla multiplicar
 factor = int(input("ingresa un número:"))
-contador = 0
 print('{factor} * 0 = {factor * 0}')
 print(f'{factor} * 1 = {factor * 1}')
 print(f'{factor} * 2 = {factor * 2}')
@@ -57,7 +56,6 @@ print(f'{factor} * 10 = {factor * 10}')
 print(f'{factor} * 11 = {factor * 11}')
 print(f'{factor} * 12 = {factor * 12}')
 """
-
 
 """
 # 7 - Operadores
