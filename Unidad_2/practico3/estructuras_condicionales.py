@@ -1,6 +1,5 @@
 from statistics import mode, median, mean
 import random
-from datetime import datetime, date
 
 """
 # 1
@@ -105,35 +104,30 @@ else:
 
 """
 # 10
-anio = datetime.now().year
 hemisferio = (input("¿En cuál hemisferio estás?\nN para norte y S para sur: ")).lower()
-mes = int(input("Ingresa el mes actual en formato MM, ej: 03 para Marzo: "))
+mes = int(input("Ingresa el mes actual en formato MM, ej: 03 (Para Marzo): "))
 dia = int(input("Ingresa el día del mes: "))
-fecha = date(anio, mes, dia)
 
-#estaciones hemisferio norte
-primavera = [date(anio,3, 21), date(anio,6,20)]
-verano = [date(anio,6, 21), date(anio,9,20)]
-otono = [date(anio,9, 21), date(anio,12,20)]
-
-if fecha >= date(anio,12, 21) or fecha <= date(anio,3,20):
+if (mes == 12 and dia >= 21) or (mes == 1) or (mes == 2) or (mes == 3 and dia <= 20):
     if hemisferio == 'n':
         print("estás en invierno")
     else:
         print("estás en verano")
-elif fecha >= primavera[0] and fecha <= primavera[1]:
+elif (mes == 3 and dia >= 21) or (mes == 4) or (mes == 5) or (mes == 6 and dia <= 20):
     if hemisferio == 'n':
         print("estás en primavera")
     else:
         print("estás en otoño")
-elif fecha >= verano[0] and fecha <= verano[1]:
+elif (mes == 6 and dia >= 21) or (mes == 7) or (mes == 8) or (mes == 9 and dia <= 20):
     if hemisferio == 'n':
         print("estás en verano")
     else:
         print("estás en invierno")
+elif (mes == 9 and dia >= 21) or (mes == 10) or (mes == 11) or (mes == 12 and dia <= 20):
+    if hemisferio == 'n':
+        print("estás en otoño")
+    else:
+        print("estás en primavera")
 else:
-    if hemisferio == 'n':
-        print("estás en otoño")
-    else:
-        print("estás en primavera")
+    print('La fecha ingresada no es válida')
 """
